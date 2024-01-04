@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ProxyLabel implements Label{
+public class ProxyLabel implements Label, HelpText{
     Label label;
     int requests = 0;
     static final int TIMEOUT = 7;
@@ -31,5 +31,13 @@ public class ProxyLabel implements Label{
         }
 
         return label.getText();
+    }
+
+    @Override
+    public String getHelpText() {
+        if(label instanceof HelpText)
+            return ((HelpText)label).getHelpText();
+        else
+            return "No help text available!";
     }
 }

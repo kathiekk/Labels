@@ -1,7 +1,8 @@
-public class RichLabel extends SimpleLabel {
+public class RichLabel extends SimpleLabel implements HelpText {
     int font_size;
     String color;
     String font;
+    public String helpText;
 
     RichLabel(String text, String color, String font, int font_size) {
         super(text);
@@ -20,5 +21,10 @@ public class RichLabel extends SimpleLabel {
 
     String getFont() {
         return font;
+    }
+
+    @Override
+    public String getHelpText() {
+        return helpText;
     }
 }

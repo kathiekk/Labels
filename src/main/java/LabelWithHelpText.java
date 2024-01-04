@@ -1,7 +1,7 @@
 public class LabelWithHelpText implements Label, HelpText{
-    private SimpleLabel label;
+    private Label label;
 
-    LabelWithHelpText(SimpleLabel label) {
+    public LabelWithHelpText(Label label) {
         this.label = label;
     }
 
@@ -12,8 +12,8 @@ public class LabelWithHelpText implements Label, HelpText{
 
     @Override
     public String getHelpText() {
-        if(label instanceof HelpLabel)
-            return ((HelpLabel)label).getHelpText();
+        if(label instanceof HelpText)
+            return ((HelpText)label).getHelpText();
         else
             return "No help text available!";
     }
