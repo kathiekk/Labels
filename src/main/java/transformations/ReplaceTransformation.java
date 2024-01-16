@@ -1,12 +1,12 @@
 package transformations;
 
 public class ReplaceTransformation extends TextTransformation {
-    String string_to_replace;
-    String replacing_string;
+    String stringToReplace;
+    String replacingString;
 
     public ReplaceTransformation(String a, String b) {
-        string_to_replace = a;
-        replacing_string = b;
+        stringToReplace = a;
+        replacingString = b;
     }
 
     @Override
@@ -14,7 +14,7 @@ public class ReplaceTransformation extends TextTransformation {
         if(text == null || text.isEmpty())
             throw new IllegalArgumentException("Null or empty string passed!");
 
-        return text.replaceAll(string_to_replace, replacing_string);
+        return text.replaceAll(stringToReplace, replacingString);
     }
 
     public boolean equals(Object object) {
@@ -25,7 +25,7 @@ public class ReplaceTransformation extends TextTransformation {
             return false;
 
         ReplaceTransformation other = (ReplaceTransformation)object;
-        return string_to_replace.equals(other.string_to_replace) &&
-                replacing_string.equals(other.replacing_string);
+        return stringToReplace.equals(other.stringToReplace) &&
+                replacingString.equals(other.replacingString);
     }
 }

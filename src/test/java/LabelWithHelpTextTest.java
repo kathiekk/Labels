@@ -28,7 +28,7 @@ public class LabelWithHelpTextTest {
     public void assertEquals_getHelpTextOnRichLabelInvoked_correctStringsReturnExpected() {
         RichLabel richLabel = new RichLabel("rich label", "red", "ariel", 12);
         LabelWithHelpText labelWithHelpText = new LabelWithHelpText(richLabel);
-        richLabel.helpText = "help text";
+        richLabel.setHelpText("help text");
         String actualText = labelWithHelpText.getText();
         String actualHelpText = labelWithHelpText.getHelpText();
 

@@ -40,4 +40,10 @@ public class ProxyLabel implements Label, HelpText{
         else
             return "No help text available!";
     }
+
+    @Override
+    public void setHelpText(String helpText) {
+        if(label instanceof HelpText)
+            ((HelpText)label).setHelpText(helpText);
+    }
 }

@@ -1,18 +1,18 @@
 public class RichLabel extends SimpleLabel implements HelpText {
-    int font_size;
+    int fontSize;
     String color;
     String font;
-    public String helpText;
+    private String helpText;
 
-    RichLabel(String text, String color, String font, int font_size) {
+    RichLabel(String text, String color, String font, int fontSize) {
         super(text);
         this.color = color;
         this.font = font;
-        this.font_size = font_size;
+        this.fontSize = fontSize;
     }
 
     int getFontSize() {
-        return font_size;
+        return fontSize;
     }
 
     String getColor() {
@@ -27,4 +27,7 @@ public class RichLabel extends SimpleLabel implements HelpText {
     public String getHelpText() {
         return helpText;
     }
+
+    @Override
+    public void setHelpText(String helpText) { this.helpText = helpText; }
 }

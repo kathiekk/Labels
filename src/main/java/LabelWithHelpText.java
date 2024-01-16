@@ -17,4 +17,9 @@ public class LabelWithHelpText implements Label, HelpText{
         else
             return "No help text available!";
     }
+
+    @Override
+    public void setHelpText(String helpText) {
+        ((HelpText)label).setHelpText(helpText);
+    }
 }

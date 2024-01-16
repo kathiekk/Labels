@@ -1,5 +1,5 @@
 public class HelpLabel extends SimpleLabel implements HelpText{
-    String helpText;
+    private String helpText;
 
     HelpLabel(String text, String helpText) {
         super(text);
@@ -9,4 +9,7 @@ public class HelpLabel extends SimpleLabel implements HelpText{
     public String getHelpText() {
         return helpText;
     }
+
+    @Override
+    public void setHelpText(String helpText) { this.helpText = helpText; }
 }
