@@ -1,7 +1,9 @@
+package labels;
+
 public class HelpLabel extends SimpleLabel implements HelpText{
     private String helpText;
 
-    HelpLabel(String text, String helpText) {
+    public HelpLabel(String text, String helpText) {
         super(text);
         this.helpText = helpText;
     }

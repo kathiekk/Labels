@@ -1,3 +1,5 @@
+package labels;
+
 public class SimpleLabel implements Label {
     public String value;
 

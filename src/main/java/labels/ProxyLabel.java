@@ -1,3 +1,5 @@
+package labels;
+
 import java.util.Scanner;
 
 public class ProxyLabel implements Label, HelpText{

@@ -1,4 +1,5 @@
 import transformations.TextTransformation;
+import labels.Label;
 
 public class Decorator implements Label{
     Label label;

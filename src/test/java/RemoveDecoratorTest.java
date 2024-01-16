@@ -2,6 +2,8 @@ import org.junit.Before;
 import org.junit.Test;
 import transformations.ReplaceTransformation;
 import transformations.TextTransformation;
+import labels.Label;
+import labels.SimpleLabel;
 
 import static org.junit.Assert.assertEquals;
 

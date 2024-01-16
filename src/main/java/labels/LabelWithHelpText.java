@@ -1,3 +1,5 @@
+package labels;
+
 public class LabelWithHelpText implements Label, HelpText{
     private Label label;
 

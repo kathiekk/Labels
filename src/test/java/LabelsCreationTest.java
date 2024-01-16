@@ -1,6 +1,8 @@
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import labels.SimpleLabel;
+import labels.RichLabel;
 
 public class LabelsCreationTest {
     @Test

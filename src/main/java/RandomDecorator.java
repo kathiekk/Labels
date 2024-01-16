@@ -1,3 +1,4 @@
+import labels.Label;
 import transformations.TextTransformation;
 
 import java.util.List;

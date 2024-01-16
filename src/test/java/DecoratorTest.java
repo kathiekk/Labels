@@ -2,6 +2,8 @@ import org.junit.Test;
 import transformations.LeftTrimTransformation;
 import transformations.ReplaceTransformation;
 import transformations.RightTrimTransformation;
+import labels.Label;
+import labels.SimpleLabel;
 
 import static org.junit.Assert.assertEquals;
 
